@@ -24,7 +24,6 @@ $(function(){
 		$.each(results, function(index, value){
 			console.log(results[index].snippet.thumbnails.medium);
 			html += "<img src='" + results[index].snippet.thumbnails.medium.url + "'>";
-			//console.log(value.Title);
 		});
 		$('#search-results').html(html);
 	}
